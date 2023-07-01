@@ -1,0 +1,25 @@
+.education-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-item {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.education-item h3 {
+    margin: 0;
+}
+
+.education-item p {
+    margin-top: 5px;
+    display: none;
+}
+
+.education-item.active p {
+    display: block;
+}
