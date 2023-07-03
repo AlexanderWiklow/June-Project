@@ -1,31 +1,20 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import './navigation.css';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navbarRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const handleLinkClick = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest',
-      });
-    }
+    setIsMenuOpen(false);
   };
 
   return (
-    <nav
-      id="nav-section"
-      className={`navigation ${isMenuOpen ? 'open' : ''}`}
-      ref={navbarRef}
-    >
+    <nav id="nav-section" className={`navigation ${isMenuOpen ? 'open' : ''}`}>
       <div className="logo">
         <h1>AW</h1>
       </div>
@@ -37,44 +26,49 @@ const Navigation = () => {
         </div>
         <ul>
           <li>
-            <a
-              href="#about-section"
+            <Link
+              to="about-section"
+              smooth={true}
               onClick={() => handleLinkClick('about-section')}
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#education-section"
+            <Link
+              to="education-section"
+              smooth={true}
               onClick={() => handleLinkClick('education-section')}
             >
               Education
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#projects-section"
+            <Link
+              to="projects-section"
+              smooth={true}
               onClick={() => handleLinkClick('projects-section')}
             >
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#recent-posts-section"
+            <Link
+              to="recent-posts-section"
+              smooth={true}
               onClick={() => handleLinkClick('recent-posts-section')}
             >
               Recent Posts
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact-section"
+            <Link
+              to="contact-section"
+              smooth={true}
               onClick={() => handleLinkClick('contact-section')}
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

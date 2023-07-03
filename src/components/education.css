@@ -11,6 +11,12 @@
     margin-bottom: 10px;
 }
 
+.education-section {
+    background-color: #ffffff;
+    padding: 200px;
+    margin-bottom: 20px;
+}
+
 .education-item h3 {
     margin: 0;
 }
