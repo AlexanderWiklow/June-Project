@@ -39,6 +39,8 @@
 
 .name h1 {
     margin: 0;
+    font-size: 32px;
+    /* Increase the font size */
 }
 
 .name-highlight {
@@ -51,8 +53,10 @@
 }
 
 .picture img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    /* Increase the width */
+    height: 300px;
+    /* Increase the height */
     object-fit: cover;
     border-radius: 50%;
 }
@@ -67,12 +71,17 @@
 
     .name {
         margin-bottom: 20px;
-        font-size: large;
+        font-size: 20px;
+        /* Increase the font size */
         /* Add some spacing between text and image */
     }
 
     .button {
         margin: 0 auto;
+        font-size: 20px;
+        /* Increase the font size */
+        padding: 20px;
+        /* Increase the padding */
     }
 
     .picture img {
@@ -83,10 +92,13 @@
 }
 
 .button {
-    min-width: 50px;
-    min-height: 10px;
+    min-width: 200px;
+    /* Increase the width */
+    min-height: 40px;
+    /* Increase the height */
     font-family: "Nunito", sans-serif;
-    font-size: 10px;
+    font-size: 20px;
+    /* Increase the font size */
     text-transform: uppercase;
     letter-spacing: 1.3px;
     font-weight: 700;
@@ -102,15 +114,18 @@
     cursor: pointer;
     outline: none;
     position: relative;
-    padding: 10px;
+    padding: 20px;
+    /* Increase the padding */
     text-decoration: none;
 }
 
 .button::before {
     content: "";
     border-radius: 1000px;
-    min-width: calc(300px + 12px);
-    min-height: calc(60px + 12px);
+    min-width: calc(340px + 12px);
+    /* Increase the width */
+    min-height: calc(80px + 12px);
+    /* Increase the height */
     border: 6px solid #00ffcb;
     box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
     position: absolute;
@@ -134,8 +149,10 @@
 
 .button::after {
     content: "";
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    /* Increase the size */
+    height: 60px;
+    /* Increase the size */
     border-radius: 100%;
     border: 6px solid #00ffcb;
     position: absolute;
