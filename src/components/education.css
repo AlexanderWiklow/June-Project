@@ -29,3 +29,11 @@
 .education-item.active p {
     display: block;
 }
+
+@media (max-width: 800px) {
+
+
+    .section {
+        padding: 40px;
+    }
+}

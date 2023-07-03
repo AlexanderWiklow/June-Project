@@ -27,7 +27,7 @@ const Education = () => {
   ];
 
   return (
-    <div className="education-section" id="education-section">
+    <div className="education-section section" id="education-section">
       <h2>Education</h2>
       <div className="education-list">
         {educationData.map((item, index) => (

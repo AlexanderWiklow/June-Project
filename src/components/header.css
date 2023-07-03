@@ -94,12 +94,7 @@ h2 {
     }
 
     .picture {
-        /* margin-bottom: 20px; */
-        /* align-items: center;
-        justify-content: center;
-        text-align: center; */
         margin: 0 auto;
-        /* Add text-align: center */
     }
 
     .picture img {
@@ -108,6 +103,10 @@ h2 {
         width: 200px;
         height: 200px;
     }
+
+    /* .section {
+        padding: 20px;
+    } */
 }
 
 
