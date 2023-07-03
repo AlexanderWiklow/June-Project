@@ -29,7 +29,7 @@ const Header = () => {
       <div className="center-container">
         <div className="name">
           <h1>
-            Hi! I'm <span className="name-highlight">Alexander Wiklöw</span>
+            Hi! I'm <span className="name-highlight"> Wiklöw</span>
           </h1>
           <h2>{typedText}</h2>
           {/* <a href="#nav-section" className="btn">
