@@ -39,7 +39,12 @@
 
 .name h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 50px;
+    /* Increase the font size */
+}
+
+h2 {
+    font-size: 30px;
     /* Increase the font size */
 }
 
@@ -64,40 +69,55 @@
 @media (max-width: 800px) {
     .center-container {
         flex-direction: column;
-        /* Change flex-direction to column */
         padding: 50px;
-        /* Reduce the padding */
     }
 
     .name {
+        margin: 0 auto;
         margin-bottom: 20px;
         font-size: 20px;
-        /* Increase the font size */
-        /* Add some spacing between text and image */
     }
 
     .button {
         margin: 0 auto;
         font-size: 20px;
-        /* Increase the font size */
         padding: 20px;
-        /* Increase the padding */
+        /* Add the following styles to center the button */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrap {
+        margin: 0 auto;
+    }
+
+    .picture {
+        /* margin-bottom: 20px; */
+        /* align-items: center;
+        justify-content: center;
+        text-align: center; */
+        margin: 0 auto;
+        /* Add text-align: center */
     }
 
     .picture img {
-        margin-top: 40px;
+        margin: 0 auto;
+        /* Add margin: 0 auto */
         width: 200px;
         height: 200px;
     }
 }
 
+
 .button {
-    min-width: 200px;
+    min-width: 250px;
     /* Increase the width */
-    min-height: 40px;
+    min-height: 50px;
     /* Increase the height */
     font-family: "Nunito", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     /* Increase the font size */
     text-transform: uppercase;
     letter-spacing: 1.3px;
@@ -136,17 +156,6 @@
     transition: all 0.3s ease-in-out 0s;
 }
 
-/* .button:hover,
-.button:focus {
-    color: #313133;
-    transform: translateY(-6px);
-} */
-
-/* .button:hover::before,
-.button:focus::before {
-    opacity: 1;
-} */
-
 .button::after {
     content: "";
     width: 60px;
@@ -162,11 +171,6 @@
     transform: translate(-50%, -50%);
     animation: ring 2.5s infinite;
 }
-
-/* .button:hover::after,
-.button:focus::after {
-    animation: none;
-} */
 
 .wrap {
     padding-top: 50px;

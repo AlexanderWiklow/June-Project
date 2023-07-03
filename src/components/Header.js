@@ -24,6 +24,11 @@ const Header = () => {
     return () => clearInterval(typingInterval);
   }, []);
 
+  const handleReadMoreClick = () => {
+    const aboutSection = document.getElementById('about-section');
+    aboutSection.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <header className="header">
       <div className="center-container">
@@ -32,13 +37,10 @@ const Header = () => {
             Hi! I'm <span className="name-highlight">Alexander Wiklöw</span>
           </h1>
           <h2>{typedText}</h2>
-          {/* <a href="#nav-section" className="btn">
-            Read More
-          </a> */}
-          <div class="wrap">
-            <a href="#nav-section" class="button">
+          <div className="wrap">
+            <button onClick={handleReadMoreClick} className="button">
               Read More
-            </a>
+            </button>
           </div>
         </div>
 
