@@ -11,18 +11,54 @@ const Education = () => {
   const educationData = [
     {
       id: 1,
-      title: 'School 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Nackademien',
+      description: 'Webbutveckling Fullstack Open Source',
+      link: 'https://nackademin.se/utbildningar/webbutvecklare-fullstack-open-source/',
     },
     {
       id: 2,
-      title: 'School 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Lexicon',
+      description: 'Programmering/Systemutveckling',
+      date: '2022-2024',
     },
     {
       id: 3,
-      title: 'School 3',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Hermods',
+      description: 'Stockholm Programmering 1 & Webbutveckling 1',
+      date: '2021',
+    },
+    {
+      id: 4,
+      title: 'Stockholms Universitet',
+      description: 'Bachelor/Kandidatexamen - Humaniora (Kinesiska Språket)',
+      date: '2009-2016',
+    },
+    {
+      id: 5,
+      title: 'South West University, Chongqing',
+      description: 'Attended as part of Chinese language studies',
+    },
+    {
+      id: 6,
+      title: 'Zhejiang University, Zhejiang',
+      description: 'Attended as part of Chinese language studies',
+    },
+    {
+      id: 7,
+      title: 'Changchun University, Changchun',
+      description: 'Attended as part of Chinese language studies',
+    },
+    {
+      id: 8,
+      title: 'Exportakademien',
+      description: 'Exportförsäljare, inriktning Kina',
+      date: '2009-2016',
+    },
+    {
+      id: 9,
+      title: 'Stockholm Yrkeshögskoleutbildning',
+      description: 'Internationell försäljning med fokus på Kina',
+      date: '2013-2015',
     },
   ];
 
@@ -39,7 +75,24 @@ const Education = () => {
             onClick={() => handleClick(index)}
           >
             <h3>{item.title}</h3>
-            {selectedItem === index && <p>{item.description}</p>}
+            {item.date && <p>{item.date}</p>}
+            {selectedItem === index && (
+              <>
+                <p>{item.description}</p>
+                {item.link && (
+                  <p>
+                    Learn more:{' '}
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.link}
+                    </a>
+                  </p>
+                )}
+              </>
+            )}
           </div>
         ))}
       </div>

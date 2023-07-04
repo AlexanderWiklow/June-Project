@@ -4,8 +4,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .blog-posts-section {
@@ -14,11 +12,112 @@
     margin-bottom: 20px;
 }
 
-.blog-post-card {
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-link {
+    flex: 0 0 calc(33.33% - 20px);
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-link:hover {
+    background-color: #f5f5f5;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #d5dbf0;
+}
+
+.card-title {
+    margin-top: 0;
+}
+
+.card-info {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #888;
+}
+
+.card-content {
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+} */
+
+/* uncomment above */
+
+/* Additional styles as needed */
+
+
+/* Additional styles as needed */
+
+
+/* .blog-post-card {
     background-color: #f5f5f5;
     padding: 20px;
     width: calc(33.33% - 40px);
-    /* Adjusted width to account for padding */
     margin-bottom: 20px;
     text-decoration: none;
     color: #000;
@@ -26,7 +125,7 @@
 
 .blog-post-card:hover {
     background-color: #ebebeb;
-}
+} */
 
 @media (max-width: 800px) {
 

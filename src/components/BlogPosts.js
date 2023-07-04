@@ -7,13 +7,27 @@ const BlogPosts = () => {
   return (
     <div className="section blog-posts-section">
       <h1 id="recent-posts-section">Recent Posts</h1>
-      {blogPosts.map((post) => (
-        <div key={post.id}>
-          <Link to={`/blog/${post.id}`}>{post.title}</Link>
-        </div>
-      ))}
+      <div className="blog-posts-container">
+        {blogPosts.map((post) => (
+          <Link to={`/blog/${post.id}`} key={post.id} className="card-link">
+            <div className="card">
+              <h3 className="card-title">{post.title}</h3>
+              <p className="card-info">{`${post.date} by ${post.author}`}</p>
+              <p className="card-content">{truncateText(post.content)}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
+};
+
+// Function to truncate the content text
+const truncateText = (text, maxLength = 100) => {
+  if (text.length <= maxLength) {
+    return text;
+  }
+  return text.substring(0, maxLength) + '...';
 };
 
 export default BlogPosts;

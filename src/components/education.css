@@ -9,7 +9,14 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
+    transition: background-color 0.3s;
 }
+
+.education-item:hover {
+    background-color: #d5dbf0;
+}
+
+
 
 .education-section {
     background-color: #ffffff;

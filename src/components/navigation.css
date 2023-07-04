@@ -7,10 +7,6 @@
     /* Set the background color with transparency */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    /* Apply the frosted glass effect */
-}
-
-.navigation {
     position: sticky;
     top: 0;
     z-index: 100;
