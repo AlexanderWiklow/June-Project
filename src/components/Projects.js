@@ -48,7 +48,7 @@ const Projects = () => {
 
   return (
     <div className="projects-container" id="projects-section">
-      <h2>Recent Projects</h2>
+      <h2 className="projects-title">Recent Projects</h2>
       <ul className="projects-list">
         {projects.map((project, index) => (
           <li

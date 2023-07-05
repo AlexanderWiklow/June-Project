@@ -25,9 +25,9 @@ const Contact = () => {
           <button onClick={handleEmailSubmit}>Submit</button>
         </div>
       </div>
-      <div className="contact-picture">
+      {/* <div className="contact-picture">
         <img src="your-picture-url" alt="Selfie" />
-      </div>
+      </div> */}
     </div>
   );
 };

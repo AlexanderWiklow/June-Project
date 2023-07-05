@@ -26,10 +26,14 @@
 }
 
 .menu ul {
-    display: flex;
+    display: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.navigation.open .menu ul {
+    display: flex;
 }
 
 .menu ul li {

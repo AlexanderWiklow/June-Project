@@ -3,6 +3,11 @@
 
 }
 
+.projects-title {
+    padding: 20px;
+    margin-left: 100px;
+}
+
 .projects-list {
     list-style-type: none;
     padding: 0;
@@ -17,7 +22,7 @@
 
 .project-info {
     padding: 20px;
-    margin-right: 100px;
+    margin-left: 100px;
 }
 
 .project-image {
@@ -26,7 +31,12 @@
     padding-right: 100px;
 }
 
-
+.project-image img {
+    max-width: 100%;
+    min-width: 200px;
+    height: auto;
+    padding: 50px;
+}
 
 
 .project-item.color-1 {
