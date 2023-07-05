@@ -11,25 +11,26 @@ const Education = () => {
   const educationData = [
     {
       id: 1,
-      title: 'Nackademien',
+      title: 'Nackademien - Webbutveckling Fullstack Open Source',
       description: 'Webbutveckling Fullstack Open Source',
       link: 'https://nackademin.se/utbildningar/webbutvecklare-fullstack-open-source/',
     },
     {
       id: 2,
-      title: 'Lexicon',
+      title: 'Lexicon - Programmering/Systemutveckling',
       description: 'Programmering/Systemutveckling',
       date: '2022-2024',
     },
     {
       id: 3,
-      title: 'Hermods',
+      title: 'Hermods - Programmering 1 & Webbutveckling 1',
       description: 'Stockholm Programmering 1 & Webbutveckling 1',
       date: '2021',
     },
     {
       id: 4,
-      title: 'Stockholms Universitet',
+      title:
+        'Stockholms Universitet - Bachelor Degree Humaniora (Kinesiska Språket)',
       description: 'Bachelor/Kandidatexamen - Humaniora (Kinesiska Språket)',
       date: '2009-2016',
     },

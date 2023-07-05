@@ -1,7 +1,6 @@
 .projects-container {
     margin-top: 20px;
-    padding-top: 100px;
-    /* padding: 100px; */
+
 }
 
 .projects-list {
@@ -11,21 +10,51 @@
 
 .project-item {
     display: flex;
-    margin-bottom: 20px;
     width: 100%;
     background-color: #f1f1f1;
-    padding: 10px;
+    color: white;
+}
+
+.project-info {
+    padding: 20px;
+    margin-right: 100px;
 }
 
 .project-image {
     flex: 1;
     text-align: right;
+    padding-right: 100px;
 }
 
-.project-item:nth-child(even) {
+
+
+
+.project-item.color-1 {
+    background: #264653;
+}
+
+.project-item.color-2 {
+    background: #2A9D8F;
+}
+
+.project-item.color-3 {
+    background: #E9C46A;
+}
+
+.project-item.color-4 {
+    background: #F4A261;
+}
+
+.project-item.color-5 {
+    background: #E76F51;
+}
+
+
+
+/* .project-item:nth-child(even) {
     background-color: #eaeaea;
 }
 
 .project-item:nth-child(odd) {
     background-color: #f7f7f7;
-}
+} */
