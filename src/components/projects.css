@@ -18,6 +18,7 @@
     width: 100%;
     background-color: #f1f1f1;
     color: white;
+    justify-content: space-between;
 }
 
 .project-info {
@@ -28,14 +29,18 @@
 .project-image {
     flex: 1;
     text-align: right;
+    max-width: 800px;
     padding-right: 100px;
+    padding: 50px;
 }
 
 .project-image img {
     max-width: 100%;
     min-width: 200px;
     height: auto;
-    padding: 50px;
+    /* padding: 50px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+
 }
 
 
@@ -57,6 +62,17 @@
 
 .project-item.color-5 {
     background: #E76F51;
+}
+
+/* Add the following CSS to adjust the scroll offset */
+.projects-container:before {
+    content: '';
+    display: block;
+    height: 100px;
+    /* Adjust the height as needed */
+    margin-top: -100px;
+    /* Adjust the negative margin to offset the scroll */
+    visibility: hidden;
 }
 
 

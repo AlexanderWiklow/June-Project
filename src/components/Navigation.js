@@ -54,7 +54,7 @@ const Navigation = () => {
           </li>
           <li>
             <Link
-              to="recent-posts-section"
+              to="blog-posts-section"
               smooth={true}
               onClick={() => handleLinkClick('recent-posts-section')}
             >

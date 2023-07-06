@@ -5,7 +5,7 @@
 
 .education-item {
     cursor: pointer;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -13,7 +13,7 @@
 }
 
 .education-item:hover {
-    background-color: #d5dbf0;
+    background-color: #f1f1f1;
 }
 
 
@@ -26,6 +26,7 @@
 
 .education-item h3 {
     margin: 0;
+    font-size: 2rem;
 }
 
 .education-item p {

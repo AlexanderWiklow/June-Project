@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './header.css';
-import Selfie from '../images/Profilepic.png';
 
 const Header = () => {
   const [typedText, setTypedText] = useState('');
@@ -32,21 +31,20 @@ const Header = () => {
   return (
     <header className="header">
       <div className="center-container">
+        <div class="text-container">
+          <h1>Alexander Wiklöw</h1>
+        </div>
         <div className="name">
-          <h1>
+          {/* <h1>
             Hi! I'm <span className="name-highlight">Alexander Wiklöw</span>
-          </h1>
+          </h1> */}
+
           <h2>{typedText}</h2>
           <div className="wrap">
             <button onClick={handleReadMoreClick} className="button">
               Read More
             </button>
           </div>
-        </div>
-
-        <div className="picture">
-          {/* Add your picture here */}
-          <img src={Selfie} alt="Selfie" />
         </div>
       </div>
     </header>

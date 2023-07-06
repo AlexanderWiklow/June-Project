@@ -26,7 +26,7 @@
 }
 
 .menu ul {
-    display: none;
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -67,18 +67,24 @@
 }
 
 @media (max-width: 700px) {
+    .navigation {
+        padding: 0px 20px 0px 20px;
+    }
+
     .menu ul {
         display: none;
         flex-direction: column;
         background-color: rgba(255, 255, 255, 0.8);
-        /* Set the background color with transparency */
-        padding: 10px;
+        /* padding-right: 100px; */
+        margin-left: -10rem;
+        padding: 1rem;
         position: absolute;
         top: 100%;
-        left: 0;
-        width: 100%;
+        font-size: 1.5rem;
+        /* left: 0; */
+        /* width: 100rem; */
         backdrop-filter: blur(10px);
-        /* Apply the frosted glass effect */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     }
 
     .menu ul li {
@@ -90,6 +96,7 @@
         display: flex;
     }
 }
+
 
 .menu ul li a {
     color: black;

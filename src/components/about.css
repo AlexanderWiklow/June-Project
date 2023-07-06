@@ -26,6 +26,21 @@
     grid-gap: 20px;
 }
 
+.picture {
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    /* text-align: right; */
+    /* margin-left: 40px; */
+}
+
+.picture img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 @media (max-width: 800px) {
     .about-section {
         padding: 40px;
@@ -37,5 +52,15 @@
 
     .section-content {
         grid-template-columns: 1fr;
+    }
+
+    .picture {
+        margin: 0 auto;
+    }
+
+    .picture img {
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
     }
 }

@@ -1,9 +1,13 @@
 import React from 'react';
 import './about.css';
+import ProfilePicture from '../images/Profilepic.png';
 
 const About = () => {
   return (
     <div id="about-section" className="about-section section">
+      <div className="picture">
+        <img src={ProfilePicture} alt="Selfie" />
+      </div>
       <h2>About</h2>
       <div className="section-content">
         <div>

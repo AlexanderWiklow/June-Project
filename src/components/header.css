@@ -14,57 +14,107 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("../images/background.jpg");
-    /* Add your night sky background image */
+    /* background: url("../images/background.jpg"); */
     background-size: cover;
     z-index: -1;
     opacity: 0.8;
     animation: twinkling 10s infinite;
 }
 
-.center-container {
+header {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #000;
+}
+
+.text-container {
+    /* height: 100vh;
+    width: 100vw; */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+}
+
+.text-container h1 {
+    margin: 0;
+    font-size: 150px;
+    color: rgba(225, 225, 225, .01);
+    background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    animation: animate 30s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        background-position: left top;
+    }
+
+    25% {
+        background-position: right bottom;
+    }
+
+    50% {
+        background-position: left bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+}
+
+/* =========================== */
+
+
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    /* flex-grow: 1;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px;
+    padding: 100px; */
 }
 
 .name {
-    text-align: left;
+    /* text-align: left; */
     margin-right: 40px;
 }
 
 .name h1 {
     margin: 0;
     font-size: 50px;
-    /* Increase the font size */
 }
 
 h2 {
     font-size: 30px;
-    /* Increase the font size */
+    color: white;
 }
 
 .name-highlight {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
-.picture {
+/* .picture {
     text-align: right;
     margin-left: 40px;
 }
 
 .picture img {
     width: 300px;
-    /* Increase the width */
     height: 300px;
-    /* Increase the height */
     object-fit: cover;
     border-radius: 50%;
-}
+} */
 
 @media (max-width: 800px) {
     .center-container {
@@ -82,7 +132,6 @@ h2 {
         margin: 0 auto;
         font-size: 20px;
         padding: 20px;
-        /* Add the following styles to center the button */
         text-align: center;
         display: flex;
         justify-content: center;
@@ -99,42 +148,34 @@ h2 {
 
     .picture img {
         margin: 0 auto;
-        /* Add margin: 0 auto */
         width: 200px;
         height: 200px;
     }
 
-    /* .section {
-        padding: 20px;
-    } */
 }
+
 
 
 .button {
     min-width: 250px;
-    /* Increase the width */
     min-height: 50px;
-    /* Increase the height */
     font-family: "Nunito", sans-serif;
     font-size: 30px;
-    /* Increase the font size */
     text-transform: uppercase;
     letter-spacing: 1.3px;
     font-weight: 700;
     color: #313133;
     background: #4fd1c5;
     background: linear-gradient(90deg,
-            rgba(129, 230, 217, 1) 0%,
+            rgb(234, 131, 83) 0%,
             rgba(79, 209, 197, 1) 100%);
     border: none;
     border-radius: 1000px;
-    /* box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64); */
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;
     position: relative;
     padding: 20px;
-    /* Increase the padding */
     text-decoration: none;
 }
 
@@ -142,11 +183,9 @@ h2 {
     content: "";
     border-radius: 1000px;
     min-width: calc(340px + 12px);
-    /* Increase the width */
     min-height: calc(80px + 12px);
-    /* Increase the height */
     border: 6px solid #00ffcb;
-    box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+    box-shadow: 0 0 60px rgba(194, 236, 228, 0.64);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -158,9 +197,7 @@ h2 {
 .button::after {
     content: "";
     width: 60px;
-    /* Increase the size */
     height: 60px;
-    /* Increase the size */
     border-radius: 100%;
     border: 6px solid #00ffcb;
     position: absolute;
@@ -171,8 +208,17 @@ h2 {
     animation: ring 2.5s infinite;
 }
 
+.button:hover {
+    background: #00ffcb;
+    background: linear-gradient(90deg,
+            rgb(235, 171, 141) 0%,
+            rgb(148, 226, 218) 100%);
+}
+
 .wrap {
-    padding-top: 50px;
+    /* padding-top: 50px; */
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes ring {
