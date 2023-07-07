@@ -10,8 +10,9 @@ const Projects = () => {
     {
       id: 1,
       title: 'Project 1',
-      description: 'Description of Project 1',
-      tools: 'React, HTML, CSS',
+      description:
+        'Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1',
+      tools: 'HTML, CSS, SASS, JavaScript',
       image: Project2,
       link: 'www.google.com',
     },
@@ -61,12 +62,17 @@ const Projects = () => {
             <div className="project-info">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <p>Tools: {project.tools}</p>
-              {/* <!-- button to view project --> */}
+              <h4>Tools:</h4>
+              <ul>
+                {project.tools.split(',').map((tool, toolIndex) => (
+                  <li key={toolIndex}>{tool.trim()}</li>
+                ))}
+              </ul>
               <a href={project.link} className="project-link">
                 View Project
               </a>
             </div>
+
             <div className="project-image">
               <img src={project.image} alt={project.title} />
             </div>

@@ -18,12 +18,13 @@ const Contact = () => {
       <div className="contact-form">
         <h2>Contact</h2>
         <p>Feel free to get in touch with me:</p>
-        <div className="form-inputs">
+        {/* <div className="form-inputs">
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />
           <textarea placeholder="Your Message"></textarea>
-          <button onClick={handleEmailSubmit}>Submit</button>
-        </div>
+
+        </div> */}
+        <button onClick={handleEmailSubmit}>Send me an email</button>
       </div>
       {/* <div className="contact-picture">
         <img src="your-picture-url" alt="Selfie" />
