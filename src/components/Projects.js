@@ -13,7 +13,8 @@ const Projects = () => {
     {
       id: 1,
       title: 'Product landing page',
-      description: `Hiking & Stuff is a responsive ecommerce web application built with a focus on outdoor enthusiasts. It offers a broad range of hiking products, each showcased with detailed descriptions and prices. The mobile-first design adjusts to various screen sizes for optimal user experience. Key features include interactive UI elements, dropdown menus for detailed product information, and individual product pages for an in-depth look. The application is built using modern web technologies including semantic HTML5 markup and SCSS, which enhances accessibility and ensures better SEO results.`,
+      description: `Hiking & Stuff is a responsive ecommerce web application built with a focus on outdoor enthusiasts. It offers a broad range of hiking products, each showcased with detailed descriptions and prices.
+      The mobile-first design adjusts to various screen sizes for optimal user experience. Key features include interactive UI elements, dropdown menus for detailed product information, and individual product pages for an in-depth look. The application is built using modern web technologies including semantic HTML5 markup and SCSS, which enhances accessibility and ensures better SEO results.`,
       tools: 'HTML, CSS, SASS, JavaScript',
       image: Project2,
       liveLink:

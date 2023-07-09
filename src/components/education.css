@@ -16,7 +16,16 @@
     background-color: #f1f1f1;
 }
 
+.arrow {
+    display: inline-block;
+    transform: rotate(90deg);
+}
 
+h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .education-section {
     background-color: #ffffff;
@@ -39,8 +48,6 @@
 }
 
 @media (max-width: 800px) {
-
-
     .section {
         padding: 40px;
     }
