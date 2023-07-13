@@ -23,27 +23,25 @@ const About = () => {
             the Webbutveckling Fullstack Open Source program. This comprehensive
             program provided me with a solid foundation in web development,
             covering both frontend and backend technologies. Additionally, I
-            obtained a Bachelor's degree in Humaniora, specializing in the
-            Chinese language, from Stockholms Universitet. During my studies, I
+            obtained a Bachelor's degree in Humanities, specializing in the
+            Chinese language from Stockholms Universitet. During my studies, I
             had the opportunity to immerse myself in Chinese culture by
             attending South West University, Zhejiang University, and Changchun
             University.
           </p>
           <p>
-            Skills: My technical skill set includes expertise in HTML, CSS,
+            Skills: My technical skill set includes knowledge in HTML, CSS,
             JavaScript, React, SQL, MySQL, NodeJS, ExpressJS, and the Microsoft
-            Office suite. I am well-versed in frontend development, with a keen
-            eye for design and user experience. Additionally, my proficiency in
-            backend technologies allows me to create robust and scalable web
-            applications.
+            Office suite. Additionally, my proficiency in backend technologies
+            allows me to create robust and scalable web applications.
           </p>
           <p>
             Work Experience: I have gained valuable work experience in various
             roles throughout my career. I worked as an Administrator at Yamaha
-            Motor Sverige, where I honed my organizational and multitasking
+            Motor Sweden, where I honed my organizational and multitasking
             abilities. As an independent entrepreneur at Wiklow Trading &
             Consulting, I successfully managed my own business, demonstrating my
-            strong entrepreneurial spirit and business acumen. I also worked as
+            strong entrepreneurial spirit and business skills. I also worked as
             a Consultant at Academic Work, where I collaborated with diverse
             clients, further enhancing my problem-solving and communication
             skills.
@@ -56,21 +54,25 @@ const About = () => {
             cross-cultural communication.
           </p>
         </div>
-        {/* <div>
-          <p>
-            Contact: Feel free to reach out to me, visit{' '}
-            <a
-              href="https://alexanderwiklow.github.io/Portfolio2023/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://alexanderwiklow.github.io/Portfolio2023/
-            </a>
-            . I am enthusiastic about leveraging my skills and experience to
-            contribute to dynamic web development projects. Let's collaborate
-            and create impactful digital experiences together.
-          </p>
-        </div> */}
+        <div className="link-text">Check out me on!</div>
+        <div className="socials">
+          <a
+            href="https://www.linkedin.com/your-profile-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="linkedin-link"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/your-username"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="github-link"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
     </div>
   );

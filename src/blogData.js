@@ -1,43 +1,24 @@
 const blogPosts = [
   {
     id: 1,
-    title: 'First Post',
-    date: '2023-06-15',
-    author: 'John Doe',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae nulla velit. Mauris non ligula eu erat posuere semper. Sed vitae nisl eget nunc aliquam aliquet. Sed vitae nisl eget nunc aliquam aliquet.  Mauris non ligula eu erat posuere semper. Sed vitae nisl eget nunc aliquam aliquet. Sed vitae nisl eget nunc aliquam aliquet.   ',
-  },
-  {
-    id: 2,
-    title: 'Second Post',
-    date: '2023-06-30',
-    author: 'Jane Smith',
-    content:
-      'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum in urna ultrices, iaculis neque at, semper sapien.',
-  },
-  {
-    id: 3,
-    title: 'Third Post',
-    date: '2023-06-30',
-    author: 'Jane Smith',
-    content:
-      'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum in urna ultrices, iaculis neque at, semper sapien.',
-  },
-  {
-    id: 4,
-    title: 'Fourth Post',
-    date: '2023-06-30',
-    author: 'Jane Smith',
-    content:
-      'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum in urna ultrices, iaculis neque at, semper sapien.',
-  },
-  {
-    id: 5,
-    title: 'Fifth Post',
-    date: '2023-06-30',
-    author: 'Jane Smith',
-    content:
-      'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum in urna ultrices, iaculis neque at, semper sapien.',
+    title: 'My Ongoing Journey into Full-Stack Web Development',
+    date: '2023-07-10',
+    author: 'Alexander Wiklöw',
+    content: `Hello World,
+
+      I'm Alexander Wiklöw, currently studying Full-stack Web Development at Nackademien. Through this blog, I aim to document my journey and the exciting projects I'm undertaking along the way.
+      
+      From creating simple HTML, CSS designs to building complex full-stack applications, my learning journey has been both challenging and rewarding. Every problem I solve deepens my passion for this field and reinforces my commitment to mastering these skills.
+      
+      Alongside my tech pursuits, I have an educational background in Humaniora, specializing in Chinese. This diverse academic experience has made me a better communicator and enriched my perspective on the world.
+      
+      One of the latest additions to my learning journey is my portfolio, a space where I showcase my evolving skills. It's a mix of projects, ranging from e-commerce web applications to personal websites, and I'm excited to share it with you.
+      
+      As I continue my journey at Nackademien, I'm looking forward to diving deeper into web development, learning new technologies, and of course, sharing my experiences with you.
+      
+      Stay tuned for more updates! Meanwhile, feel free to connect with me on LinkedIn and explore my projects on GitHub.
+      
+      Until next time, happy coding!  `,
   },
   // Add more posts as needed
 ];

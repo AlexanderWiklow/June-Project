@@ -14,6 +14,7 @@ const Education = () => {
       title: 'Nackademin - Fullstack Web Development Open Source - 2 years',
       description: 'Fullstack Web Development Open Source',
       link: 'https://nackademin.se/utbildningar/webbutvecklare-fullstack-open-source/',
+      date: '2022-2024',
     },
     {
       id: 2,
@@ -41,7 +42,7 @@ const Education = () => {
     },
     {
       id: 6,
-      title: 'Zhejiang University, Zhejiang',
+      title: 'Zhejiang University, Zhejiang - 6 months',
       description: 'Attended as part of Chinese language studies',
     },
     {
@@ -52,8 +53,8 @@ const Education = () => {
     {
       id: 8,
       title: 'Export Academy - 2 years',
-      description: 'Export salesperson, focus on China',
-      date: '2009-2016',
+      description: 'Export and import business acumen, focus on China',
+      date: '2013-2015',
     },
   ];
 

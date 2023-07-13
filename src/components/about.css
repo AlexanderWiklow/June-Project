@@ -3,7 +3,7 @@
 .about-section {
     background-color: #ffffff;
     padding: 200px;
-    margin-bottom: 20px;
+    margin: 20px 0px 20px 0px;
     border-radius: 8px;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
@@ -29,6 +29,8 @@
 .picture {
     justify-content: center;
     display: flex;
+    margin-top: 50px;
+
 }
 
 .picture img {
@@ -37,6 +39,43 @@
     object-fit: cover;
     border-radius: 50%;
 }
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.socials a {
+    margin: 0 10px;
+    font-size: 24px;
+
+}
+
+.socials a:hover {
+    font-size: 2rem;
+}
+
+.link-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+a.linkedin-link {
+    text-decoration: none;
+    color: #0e76a8;
+    font-weight: bold;
+}
+
+a.github-link {
+    text-decoration: none;
+    color: #24292e;
+    font-weight: bold;
+}
+
 
 @media (max-width: 800px) {
     .about-section {

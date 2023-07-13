@@ -12,7 +12,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Product landing page',
+      title: 'Product Landing Page',
       description: `Hiking & Stuff is a responsive ecommerce web application built with a focus on outdoor enthusiasts. It offers a broad range of hiking products, each showcased with detailed descriptions and prices.
       The mobile-first design adjusts to various screen sizes for optimal user experience. Key features include interactive UI elements, dropdown menus for detailed product information, and individual product pages for an in-depth look. The application is built using modern web technologies including semantic HTML5 markup and SCSS, which enhances accessibility and ensures better SEO results.`,
       tools: 'HTML, CSS, SASS, JavaScript',
@@ -23,7 +23,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Sports product landing page',
+      title: 'Sports Product Landing Page',
       description: `Sportify Web Store is a comprehensive ecommerce platform focused on sports goods, built using React. The web application offers a broad range of sports products, each displayed with detailed descriptions and prices. Designed with a responsive layout, the application ensures an optimal viewing experience across various devices.
 
       Key Features:
@@ -32,7 +32,7 @@ const Projects = () => {
       Product Sorting: Users have the ability to sort products based on different parameters, such as name, price (in both ascending and descending order), and product category, making product search and selection a breeze.
       Product Management: The application provides features to add new products and edit existing ones, allowing for easy management of product listings.
       Single Product View: Users can explore individual product pages for more detailed information, enhancing the shopping experience.`,
-      tools: 'Node.js, Express, MongoDB',
+      tools: 'Node.js, Express, MongoDB, SCSS, Material UI, React',
       image: Project3,
       liveLink: '',
       githubLink:
@@ -44,7 +44,7 @@ const Projects = () => {
       description: `Product Research Tool
 
       As a student project, the Product Research Tool I developed is an entry-level e-commerce data analysis tool. It allows users to examine customer purchase data, and through different parameters, gain basic insights to inform marketing strategies. This project, implemented in JavaScript, showcases my ability to create functional and adaptable solutions. Although it's a modest tool, it offers a practical introduction to the complexity of market research in the e-commerce domain and stands as an important step in my ongoing learning journey.`,
-      tools: 'JavaScript, jQuery, Bootstrap',
+      tools: 'JavaScript, HTML, CSS',
       image: Project4,
       liveLink: '',
       githubLink: 'https://github.com/AlexanderWiklow/Product-Research-Tool',
@@ -53,18 +53,18 @@ const Projects = () => {
       id: 1,
       title: 'Spicy Ramen Noodles Restaurant Page',
       description: `The "Spicy Ramen Noodles" project is a restaurant website with three key features. The "Menu" section presents a variety of dishes with pictures, ingredients, and prices. The "Book a table" section provides a form for users to make a reservation, capturing details such as names, number of guests, preferred date, and any special requirements. Lastly, the "About us" section presumably provides information about the restaurant's history and mission. This user-friendly website aims to enhance the online presence of the restaurant, facilitating easy navigation and interaction for customers.`,
-      tools: 'React, HTML, CSS',
+      tools: 'HTML, CSS',
       image: Project5,
       liveLink: 'https://alexanderwiklow.github.io/Restaurant-page/',
       githubLink: 'https://github.com/AlexanderWiklow/Restaurant-page',
     },
     {
       id: 2,
-      title: 'TODO application',
+      title: 'To-Do Application',
       description: `Interactive To-Do List Application with Social Features
 
       This student project is a full-stack To-Do List Application that not only enables users to manage their tasks but also incorporates social features. Users can register, log in, create, modify their to-do lists, and even add friends and view their lists. The application uses HTML5, CSS, SCSS, and React on the front-end, and Node.js, Express, and MySQL for the back-end. Key features include SQL injection protection, hashed password storage, JWT for authentication, and a social component allowing for the exchange of task lists among friends. The server maintains a clean project structure, employs appropriate HTTP methods and status codes/messages, and utilizes custom middleware for advanced request processing.`,
-      tools: 'Node.js, Express, MongoDB',
+      tools: 'Node.js, Express, MongoDB, React, SCSS',
       image: Project6,
       liveLink: '',
       githubLink:
