@@ -7,6 +7,7 @@
     padding: 20px;
     margin-left: 65px;
     color: black;
+    font-size: 3rem;
 }
 
 .projects-list {
@@ -21,13 +22,16 @@
     color: white;
     justify-content: space-between;
     padding: 2rem;
+    box-sizing: border-box;
 }
 
 .project-info {
     padding: 20px;
     width: 30%;
     margin-left: 5rem;
+    box-sizing: border-box;
 }
+
 
 .project-info h3 {
     font-size: 3rem;
