@@ -18,12 +18,12 @@
 }
 
 .blog-post-title {
-    font-size: 40px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .blog-post-content {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.6;
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import blogPosts from '../blogData';
 import './blogPost.css';
@@ -12,12 +12,18 @@ const BlogPost = () => {
   // Filter out the current blog post from the list
   const otherPosts = blogPosts.filter((post) => post.id !== parseInt(id));
 
+  // Scroll to the top of the page whenever id changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
   return (
     <div className="blog-post-container">
       <div className="blog-post">
         <Link to="/" className="home-link">
           Home
         </Link>
+
         <h2 className="blog-post-title">
           {blogPost ? blogPost.title : 'Blog Post Not Found'}
         </h2>
