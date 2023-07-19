@@ -256,3 +256,17 @@ h2 {
         background-position: 0% 0%;
     }
 }
+
+@media only screen and (max-width: 428px) {
+    .text-container h1 {
+        font-size: 4rem;
+    }
+
+    .name h2 {
+        font-size: 20px;
+    }
+
+    .center-container {
+        padding: 0px;
+    }
+}
