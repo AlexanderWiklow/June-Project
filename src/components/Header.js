@@ -34,11 +34,7 @@ const Header = () => {
         <div class="text-container">
           <h1>Alexander Wiklöw</h1>
         </div>
-        <div className="name">
-          {/* <h1>
-            Hi! I'm <span className="name-highlight">Alexander Wiklöw</span>
-          </h1> */}
-
+        <div className="roll-text">
           <h2>{typedText}</h2>
           <div className="wrap">
             <button onClick={handleReadMoreClick} className="button">

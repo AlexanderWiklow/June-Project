@@ -32,8 +32,6 @@ header {
 
 
 .text-container {
-    /* height: 100vh;
-    width: 100vw; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +40,7 @@ header {
 
 .text-container h1 {
     margin: 0;
-    font-size: 150px;
+    font-size: 10vw;
     color: rgba(225, 225, 225, .01);
     background-image: url("../images/su-san-lee-g3PyXO4A0yc-unsplash.jpg");
     background-repeat: repeat;
@@ -82,54 +80,26 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px;
-    /* flex-grow: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px; */
+    /* padding: 100px; */
+    margin: 5rem;
 }
 
-.name {
-    /* text-align: left; */
-    margin-right: 40px;
-}
-
-.name h1 {
+.roll-text h2 {
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 5vw;
+    font-weight: 900;
+    color: #313133;
+    text-align: center;
+    /* text-transform: uppercase; */
+    letter-spacing: 1.3px;
     margin: 0;
-    font-size: 50px;
+    padding: 20px;
 }
-
-h2 {
-    font-size: 30px;
-    color: white;
-}
-
-.name-highlight {
-    color: rgb(255, 255, 255);
-}
-
-/* .picture {
-    text-align: right;
-    margin-left: 40px;
-}
-
-.picture img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-} */
 
 @media (max-width: 800px) {
     .center-container {
         flex-direction: column;
         padding: 50px;
-    }
-
-    .name {
-        margin: 0 auto;
-        margin-bottom: 20px;
-        font-size: 20px;
     }
 
     .button {
@@ -155,11 +125,6 @@ h2 {
         width: 200px;
         height: 200px;
     }
-
-    .text-container h1 {
-        font-size: 5rem;
-    }
-
 }
 
 
@@ -229,42 +194,9 @@ h2 {
     justify-content: center;
 }
 
-@keyframes ring {
-    0% {
-        width: 10px;
-        height: 10px;
-        opacity: 1;
-    }
 
-    100% {
-        width: 150px;
-        height: 150px;
-        opacity: 0;
-    }
-}
-
-@keyframes twinkling {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    50% {
-        background-position: 40% 40%;
-    }
-
-    100% {
-        background-position: 0% 0%;
-    }
-}
 
 @media only screen and (max-width: 800px) {
-    .text-container h1 {
-        font-size: 4rem;
-    }
-
-    .name h2 {
-        font-size: 20px;
-    }
 
     .center-container {
         padding: 0px;
