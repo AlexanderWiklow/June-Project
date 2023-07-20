@@ -19,7 +19,7 @@
     display: flex;
     width: 100%;
     background-color: #f1f1f1;
-    color: white;
+    color: rgb(0, 0, 0);
     justify-content: space-between;
     padding: 2rem;
     box-sizing: border-box;
@@ -41,7 +41,7 @@
 .project-info p {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
 }
 
 .project-info h4 {
@@ -88,22 +88,43 @@ ul {
 
 .project-item.color-1 {
     background: #264653;
+    color: #ffffff;
+}
+
+.project-item.color-1 p {
+    color: #ffffff;
 }
 
 .project-item.color-2 {
     background: #2A9D8F;
 }
 
+.project-item.color-2 a {
+    color: #000000;
+}
+
 .project-item.color-3 {
     background: #E9C46A;
+}
+
+.project-item.color-3 a {
+    color: #000000;
 }
 
 .project-item.color-4 {
     background: #F4A261;
 }
 
+.project-item.color-4 a {
+    color: #000000;
+}
+
 .project-item.color-5 {
     background: #E76F51;
+}
+
+.project-item.color-5 a {
+    color: #000000;
 }
 
 /* Add the following CSS to adjust the scroll offset */
@@ -117,9 +138,10 @@ ul {
     visibility: hidden;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
     .project-item {
         flex-direction: column;
+        align-items: center;
     }
 
     .project-info {
@@ -134,7 +156,7 @@ ul {
     .project-image img {
         height: auto;
         width: 50rem;
-        padding: 10px;
+        /* padding: 10px; */
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
     }
 }

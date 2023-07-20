@@ -11,7 +11,7 @@ const BlogPosts = () => {
         {blogPosts.map((post) => (
           <Link to={`/blog/${post.id}`} key={post.id} className="card-link">
             <div className="card">
-              <h3 className="card-title">{post.title}</h3>
+              <p className="card-title">{post.title}</p>
               <p className="card-info">{`${post.date} by ${post.author}`}</p>
               <p className="card-content">{truncateText(post.content)}</p>
             </div>
