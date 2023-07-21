@@ -58,6 +58,7 @@ body.dark-mode {
 
 .navigation.open .menu ul {
     display: flex;
+    background-color: var(--background-color);
 }
 
 .menu ul li {
