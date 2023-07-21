@@ -30,6 +30,14 @@ const BlogPost = () => {
         <p>{blogPost && blogPost.date}</p>
         {blogPost && (
           <div className="blog-post-content">
+            <div className="imgDiv">
+              <img
+                className="blogImage"
+                src={blogPost.image}
+                alt={blogPost.title}
+              />
+            </div>
+
             <p>{blogPost.content}</p>
             <p>{blogPost.author}</p>
           </div>

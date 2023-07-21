@@ -1,3 +1,5 @@
+import image1 from './images/background2.jpg';
+
 const blogPosts = [
   {
     id: 1,
@@ -19,6 +21,7 @@ const blogPosts = [
       Stay tuned for more updates! Meanwhile, feel free to connect with me on LinkedIn and explore my projects on GitHub.
       
       Until next time, happy coding!  `,
+    image: image1,
   },
   {
     id: 2,
