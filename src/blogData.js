@@ -1,4 +1,5 @@
 import image1 from './images/background2.jpg';
+import image2 from './images/background3.jpg';
 
 const blogPosts = [
   {
@@ -29,6 +30,7 @@ const blogPosts = [
     date: '2023-07-21',
     author: 'Alexander Wiklöw',
     content: `TBA`,
+    image: image2,
   },
 ];
 
