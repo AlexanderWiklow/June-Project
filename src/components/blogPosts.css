@@ -1,4 +1,20 @@
-/* blogposts.css */
+:root {
+    --background-color: rgba(255, 255, 255, 0.5);
+    --text-color: black;
+    --about-background-color: #ffffff;
+    --about-text-color: #333333;
+}
+
+body.dark-mode {
+    --background-color: rgb(34, 34, 34);
+    --text-color: white;
+    --about-background-color: rgb(24, 24, 24);
+    --about-text-color: white;
+}
+
+#recent-posts-section {
+    color: var(--text-color);
+}
 
 .blog-posts-container {
     display: flex;
@@ -7,9 +23,9 @@
 }
 
 .blog-posts-section {
-    background-color: #ffffff;
+    background-color: var(--background-color);
     padding: 200px;
-    margin-bottom: 20px;
+    margin-top: -20px;
 }
 
 .card {
@@ -25,7 +41,7 @@
 p.card-title {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: rgb(0, 0, 0);
+    color: var(--text-color);
 }
 
 .card:hover {

@@ -1,13 +1,28 @@
-.projects-container {
-    margin-top: 20px;
-
+:root {
+    --background-color: rgba(255, 255, 255, 0.5);
+    --text-color: black;
+    --about-background-color: #ffffff;
+    --about-text-color: #333333;
 }
+
+body.dark-mode {
+    --background-color: rgb(34, 34, 34);
+    --text-color: white;
+    --about-background-color: rgb(24, 24, 24);
+    --about-text-color: white;
+}
+
 
 .projects-title {
     padding: 20px;
     margin-left: 65px;
-    color: black;
+    color: var(--text-color);
     font-size: 3rem;
+    background-color: var(--background-color);
+    margin-top: -20px;
+    margin-bottom: -20px;
+    margin-left: -20px;
+    padding-left: 65px;
 }
 
 .projects-list {

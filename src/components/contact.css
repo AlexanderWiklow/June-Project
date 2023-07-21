@@ -1,10 +1,25 @@
+:root {
+    --background-color: rgba(255, 255, 255, 0.5);
+    --text-color: black;
+    --about-background-color: #ffffff;
+    --about-text-color: #333333;
+}
+
+body.dark-mode {
+    --background-color: rgb(34, 34, 34);
+    --text-color: white;
+    --about-background-color: rgb(24, 24, 24);
+    --about-text-color: white;
+}
+
 .contact-container {
     display: flex;
     justify-content: center;
     /* padding: 20px; */
-    margin: 100px;
+    /* margin: 100px; */
     justify-content: center;
     padding: 100px;
+    background-color: var(--background-color);
 }
 
 h2 {

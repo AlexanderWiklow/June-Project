@@ -54,7 +54,7 @@ const About = () => {
             cross-cultural communication.
           </p>
         </div>
-        <div className="link-text">Check out me on!</div>
+        <div className="link-text">Check out or contact me on:</div>
         <div className="socials">
           <a
             href="https://www.linkedin.com/your-profile-link"

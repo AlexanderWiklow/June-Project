@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import './navigation.css';
+import lightbulb from '../images/lightbulb.png';
+import darkLightbulb from '../images/dark-lightbulb.png';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [bulbImg, setBulbImg] = useState(lightbulb); // Default light mode image
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -12,6 +16,20 @@ const Navigation = () => {
   const handleLinkClick = (sectionId) => {
     setIsMenuOpen(false);
   };
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark-mode');
+      setBulbImg(lightbulb); // Dark mode image
+    } else {
+      document.body.classList.remove('dark-mode');
+      setBulbImg(darkLightbulb); // Light mode image
+    }
+  }, [isDarkMode]);
 
   return (
     <nav id="nav-section" className={`navigation ${isMenuOpen ? 'open' : ''}`}>
@@ -24,6 +42,7 @@ const Navigation = () => {
           <div className="line"></div>
           <div className="line"></div>
         </div>
+
         <ul>
           <li>
             <Link
@@ -67,10 +86,20 @@ const Navigation = () => {
               smooth={true}
               onClick={() => handleLinkClick('contact-section')}
             >
-              Contact
+              Contact |
             </Link>
           </li>
         </ul>
+        <button className="darkmode" onClick={toggleDarkMode}>
+          {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+        </button>
+
+        <img
+          className="lightbulb"
+          src={bulbImg}
+          alt="lightbulb"
+          onClick={toggleDarkMode}
+        />
       </div>
     </nav>
   );
