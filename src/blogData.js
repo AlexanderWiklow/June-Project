@@ -20,7 +20,13 @@ const blogPosts = [
       
       Until next time, happy coding!  `,
   },
-  // Add more posts as needed
+  {
+    id: 2,
+    title: 'How i optimized my portfolio website',
+    date: '2023-07-21',
+    author: 'Alexander Wiklöw',
+    content: `TBA`,
+  },
 ];
 
 export default blogPosts;

@@ -1,3 +1,13 @@
+:root {
+    --background-color: rgba(255, 255, 255, 0.5);
+    --text-color: black;
+}
+
+body.dark-mode {
+    --background-color: rgb(34, 34, 34);
+    --text-color: white;
+}
+
 .blog-post-container {
     display: flex;
     align-items: flex-start;
@@ -5,10 +15,11 @@
     height: 100vh;
     box-sizing: border-box;
     justify-content: center;
+    background-color: var(--background-color);
 }
 
 .blog-post {
-    background-color: #fff;
+    background-color: var(--background-color);
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -32,6 +43,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
 }
 
 .other-posts h3 {
@@ -46,8 +58,11 @@
 }
 
 .other-post {
-    background-color: #f4f4f4;
+    background-color: var(--background-color);
     padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+
 }
 
 .home-link {
@@ -60,4 +75,10 @@
 
 .home-link:hover {
     text-decoration: underline;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
 }

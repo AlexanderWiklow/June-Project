@@ -6,7 +6,12 @@ import darkLightbulb from '../images/dark-lightbulb.png';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Check local storage for dark mode key
+  const [isDarkMode, setIsDarkMode] = useState(
+    localStorage.getItem('darkMode') === 'true',
+  );
+
   const [bulbImg, setBulbImg] = useState(lightbulb); // Default light mode image
 
   const toggleMenu = () => {
@@ -21,14 +26,20 @@ const Navigation = () => {
     setIsDarkMode(!isDarkMode);
   };
 
+  // Update the bulb image and body class when isDarkMode changes
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('dark-mode');
-      setBulbImg(lightbulb); // Dark mode image
+      setBulbImg(darkLightbulb); // Dark mode image
     } else {
       document.body.classList.remove('dark-mode');
-      setBulbImg(darkLightbulb); // Light mode image
+      setBulbImg(lightbulb); // Light mode image
     }
+  }, [isDarkMode]);
+
+  // Update local storage when isDarkMode changes
+  useEffect(() => {
+    localStorage.setItem('darkMode', isDarkMode);
   }, [isDarkMode]);
 
   return (
